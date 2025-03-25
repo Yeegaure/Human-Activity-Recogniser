@@ -1,6 +1,6 @@
 # Human Activity Recogniser (HAR)
 HAR is a kaggle competition and I am publishing my 2 solutions to it.
-In this competition your goal is to build a Human Activity Recognizer (HAR) based on features captured from mobile phone's accelerometer and gyroscope:
+In this competition my goal was to build a Human Activity Recognizer (HAR) model, which runtime is limited by 2 minutes, based on features captured from mobile phone's accelerometer and gyroscope:
 
     walking
     walking upstairs
@@ -13,7 +13,7 @@ In this competition your goal is to build a Human Activity Recognizer (HAR) base
     0,1
     1,6
     2,6
-My public leaderboard position is 23/40 and 15/40.
+My public and private leaderboard positions are 23/40 and 15/40, respectively.
 
 The idea behind the solution was to use the PCA in order to decrease the number of parameters from 561 to 166, while capturing 99% of explained variance.
 The model is a neural network of 4 layers, that consists of:
@@ -34,6 +34,6 @@ The model is a neural network of 4 layers, that consists of:
 
 As the optimiser I have selected Adam with the learning rate of 0.006 and of the weight decay of 1e-7.
 
-I have chosen to perform 4 epochs to train this neural network and I have plotted the accuracy, validation and training loss to inspect the model performance at each step and to aviod the overfitting on the test data.
+I have chosen to perform 4 epochs (mainly because of the time limitation) to train this neural network and I have plotted the accuracy, validation and training loss to inspect the model performance at each step and to aviod the overfitting on the test data.
 
 To run the model it is recommeded to run the model on GPU titan T4 in google colab.
