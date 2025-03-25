@@ -34,6 +34,6 @@ The model is a neural network of 4 layers, that consists of:
 
 As the optimiser I have selected Adam with the learning rate of 0.006 and of the weight decay of 1e-7.
 
-I have chosen to perform 10 epochs to train this neural network and I have plotted the accuracy, validation and training loss to inspect the model performance at each step and to aviod the overfitting on the test data.
+I have chosen to perform 4 epochs to train this neural network and I have plotted the accuracy, validation and training loss to inspect the model performance at each step and to aviod the overfitting on the test data.
 
 To run the model it is recommeded to run the model on GPU titan T4 in google colab.
